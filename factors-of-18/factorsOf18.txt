@@ -1,0 +1,16 @@
+Factors of 18:
+
+I started by running this script. It initially gave me all of the variable numbers [2, 3,
+4, 5, 6, 7, 8, 9]. I first looked at the if statement, if the remainder divided by the
+dividend is equal to zero  it is a factor. I then looked at the if(factor) statement where 
+it logged the statement. My first idea was to put "if (factor = true)" log the statement
+because I was thinking that since it didn't specify whether or not the factor was true 
+or false it could have been printing all of them. That made no difference at all in the 
+output of the code, so I decided to go through and check that the rest of the script was 
+correct. The formatting between how this would look in Python, which I am used to, and 
+JavaScript look a bit different, so I went on the internet and checked the 
+"var divisor = numbers[idx];" line was formatted correctly for the divisor to be the 
+index of each of the numbers above. My last assumed bug would be the solution. I moved
+the "console.log(divisor + ' is a factor of ' + dividend + '!');" statement out of its 
+own if statement and into the previous one where we found the remainder. I ran this one
+and it gave me the expected results; the remainders of 18 [2, 3, 6, 9].

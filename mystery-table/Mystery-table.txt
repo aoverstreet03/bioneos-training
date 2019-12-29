@@ -1,0 +1,11 @@
+Mystery Table: what my idea of the proposed function does.
+
+We are creating a function that builds a table with [count] = 4 elements.
+While the count is decrementing from 4 to 3 to 2 to 1, we push (or add new elements to the table)
+To fill it with numbers we go through and start at row one, and as long as it is less than 
+the length of the table we will add new elements and these elements will be the count you 
+are incrementing by. It will add it to the table and then return these incremented count numbers.
+
+Mystery Table: what the function actually does.
+
+Returns [undefined]
