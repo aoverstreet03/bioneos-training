@@ -2,8 +2,8 @@ Factors of 18:
 
 I started by running this script. It initially gave me all of the variable numbers [2, 3,
 4, 5, 6, 7, 8, 9]. I first looked at the if statement, if the remainder divided by the
-dividend is equal to zero  it is a factor. I then looked at the if(factor) statement where 
-it logged the statement. My first idea was to put "if (factor = true)" log the statement
+dividend is equal to zero, it is a factor. I then looked at the if(factor) statement where 
+it logged the statement. My first idea was to put "if (factor == true)" log the statement
 because I was thinking that since it didn't specify whether or not the factor was true 
 or false it could have been printing all of them. That made no difference at all in the 
 output of the code, so I decided to go through and check that the rest of the script was 

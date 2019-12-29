@@ -17,14 +17,14 @@ answer went away but I kept getting zeroes. Next I thought that maybe the if sta
 incrementing correctly. I changed the break statement to i++ and it finally started returning 
 numbers. The number for coffee and eecoff was a 4 instead of a two. I decided to try 
 (firstArr.length – i) in the print statement to see if I subtracted the length (6) from my 
-output (4) that I got above from incrementing i++ in the if statement. I thought that it 
+output (4) if it would run the correct answers. I thought this might be a possibility because it
 could’ve been giving me the number rotated to the right instead of left. This did work for 
 that specific test but when I tried other tests, they failed. I deleted the 
 (firstArr.length – i) in the print statement and the incrementing i++ above. I then moved the 
 "(System.out.println(args[0] + ", " + args[1] + " => " + i)" statement up to the if statement 
-above thinking that the issue may be like the factors of 18 code I had recently debugged when 
+above thinking that the issue may be like the factors of 18 code I recently debugged when 
 the factors didn’t run correctly unless in the same if statement. When I had no luck with that 
-I decided to re-read the for loop as I was pretty certain the error had t be there. Initially 
+I decided to re-read the for loop as I was pretty certain the error had to be there. Initially 
 I was thinking that the outside for loop would be the first argument’s rotation and the inside 
 for loop would be the second argument’s rotation but I decided to see if it might be the other 
 way around. My thought process was that it might not be returning because we were trying to do 
