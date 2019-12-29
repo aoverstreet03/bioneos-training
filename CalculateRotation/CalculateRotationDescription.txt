@@ -1,3 +1,32 @@
 Calculate Rotation:
 
-The first step I took to solving this Java method was to try to understand an unfamiliar programming language. Most things are similar or readable from my knowledge in python, but I took time to understand the “system.out.printIn” line of code as well as what the different numbers of exits meant. I also had to learn what the “public static void main(String[] args) meant. I then ran the code with multiple tests, and each one of them came back negative one. I knew that there were two statements with negative one so I checked the first one because I wanted to make sure the code was getting past that “if” statement, and if it was getting stopped it wouldn’t carry out the rest of the code. I checked to see that the argument length of the first argument equaled that of the second argument and it did so I concluded it should move past that if statement. I then looked at the for loop. I first thought that if the rotation of the first argument did not equal a remainder of zero when the rotations of the first and second argument divided by the first argument’s length, then the matches would be false. I changed “if (matches == true)” to matches == false. When I ran it, the -1 answer went away but I kept getting zeroes. Next I thought that maybe the if statement wasn’t incrementing correctly. I changed the break statement to i++ and it finally started returning numbers. The number for coffee and eecoff was a 4 instead of a two. I decided to try (firstArr.length – i) in the print statement to see if I subtracted the length (6) from my output (4) that I got above from incrementing i++ in the if statement. I thought that it could’ve been giving me the number rotated to the right instead of left. This did work for that specific test but when I tried other tests, they failed. I deleted the (firstArr.length – i) in the print statement and the incrementing i++ above. I then moved the "(System.out.println(args[0] + ", " + args[1] + " => " + i)" statement up to the if statement above thinking that the issue may be like the factors of 18 code I had recently debugged when the factors didn’t run correctly unless in the same if statement. When I had no luck with that I decided to re-read the for loop as I was pretty certain the error had t be there. Initially I was thinking that the outside for loop would be the first argument’s rotation and the inside for loop would be the second argument’s rotation but I decided to see if it might be the other way around. My thought process was that it might not be returning because we were trying to do the firstArr[] of the second rotation. I changed the firstArr[i] to FirstArr[j] and ran the script to get the correct output.
+The first step I took to solving this Java method was to try to understand an unfamiliar 
+programming language. Most things are similar or readable from my knowledge in python, but 
+I took time to understand the “system.out.printIn” line of code as well as what the different 
+numbers of exits meant. I also had to learn what the “public static void main(String[] args)
+meant. I then ran the code with multiple tests, and each one of them came back negative one. 
+I knew that there were two statements with negative one so I checked the first one because I
+wanted to make sure the code was getting past that “if” statement, and if it was getting 
+stopped it wouldn’t carry out the rest of the code. I checked to see that the argument 
+length of the first argument equaled that of the second argument and it did so I concluded 
+it should move past that if statement. I then looked at the for loop. I first thought that
+if the rotation of the first argument did not equal a remainder of zero when the rotations 
+of the first and second argument divided by the first argument’s length, then the matches
+would be false. I changed “if (matches == true)” to matches == false. When I ran it, the -1 
+answer went away but I kept getting zeroes. Next I thought that maybe the if statement wasn’t 
+incrementing correctly. I changed the break statement to i++ and it finally started returning 
+numbers. The number for coffee and eecoff was a 4 instead of a two. I decided to try 
+(firstArr.length – i) in the print statement to see if I subtracted the length (6) from my 
+output (4) that I got above from incrementing i++ in the if statement. I thought that it 
+could’ve been giving me the number rotated to the right instead of left. This did work for 
+that specific test but when I tried other tests, they failed. I deleted the 
+(firstArr.length – i) in the print statement and the incrementing i++ above. I then moved the 
+"(System.out.println(args[0] + ", " + args[1] + " => " + i)" statement up to the if statement 
+above thinking that the issue may be like the factors of 18 code I had recently debugged when 
+the factors didn’t run correctly unless in the same if statement. When I had no luck with that 
+I decided to re-read the for loop as I was pretty certain the error had t be there. Initially 
+I was thinking that the outside for loop would be the first argument’s rotation and the inside 
+for loop would be the second argument’s rotation but I decided to see if it might be the other 
+way around. My thought process was that it might not be returning because we were trying to do 
+the firstArr[] of the second rotation. I changed the firstArr[i] to FirstArr[j] and ran the 
+script to get the correct output.
